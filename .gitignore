@@ -1,0 +1,15 @@
+.DS_Store
+*.build
+*.framework
+*.build/*
+xcuserdata
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcbuild
+*build
+*.xcscmblueprint
+Pods
+*.xcworkspace
+*.xcuserstate
+*documentation/api-docs/
