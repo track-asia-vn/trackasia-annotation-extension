@@ -1,5 +1,5 @@
 PODS:
-  - Trackasia (5.12.2)
+  - Trackasia (1.0.0)
 
 DEPENDENCIES:
   - Trackasia (from `https://github.com/track-asia-vn/trackasia-cocoapods.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Trackasia:
-    :commit: 6cfb43adbdfe55eded85f381fd380c8d8bd0cb49
+    :commit: 2a5c2ae3abd6193a783bb3e3837cc58d4d85a074
     :git: https://github.com/track-asia-vn/trackasia-cocoapods.git
 
 SPEC CHECKSUMS:
-  Trackasia: eb43bd0b9dd01eab7b2101325ca830e621b12c44
+  Trackasia: 602e37930b9226c31785aa39aa3e5134f0aa26a2
 
 PODFILE CHECKSUM: c64a973d5904c69c3e815387cbbdc87ccf6b87d2
 
