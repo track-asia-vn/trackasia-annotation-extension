@@ -1,6 +1,6 @@
 import UIKit
 import Mapbox
-import MapboxAnnotationExtension
+import TrackasiaAnnotationExtension
 
 class SettingsViewController: UIViewController {
 

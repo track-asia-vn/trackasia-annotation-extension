@@ -17,7 +17,7 @@
                BlueprintIdentifier = "1F40B9A822BC1B03003DB389"
                BuildableName = "annotationapp.app"
                BlueprintName = "annotationapp"
-               ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+               ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "1F40B9BB22BC1B05003DB389"
                BuildableName = "annotationappTests.xctest"
                BlueprintName = "annotationappTests"
-               ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+               ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "1F40B9A822BC1B03003DB389"
             BuildableName = "annotationapp.app"
             BlueprintName = "annotationapp"
-            ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+            ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "1F40B9A822BC1B03003DB389"
             BuildableName = "annotationapp.app"
             BlueprintName = "annotationapp"
-            ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+            ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "1F40B9A822BC1B03003DB389"
             BuildableName = "annotationapp.app"
             BlueprintName = "annotationapp"
-            ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+            ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

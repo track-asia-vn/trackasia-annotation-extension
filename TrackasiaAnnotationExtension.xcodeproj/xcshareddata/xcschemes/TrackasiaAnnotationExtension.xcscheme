@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07CBD7E622B8570400732884"
-               BuildableName = "MapboxAnnotationExtension.framework"
-               BlueprintName = "MapboxAnnotationExtension"
-               ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+               BuildableName = "TrackasiaAnnotationExtension.framework"
+               BlueprintName = "TrackasiaAnnotationExtension"
+               ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1FDAB5C222C3FAEB003D6D34"
-               BuildableName = "MapboxAnnotationExtensionTests.xctest"
-               BlueprintName = "MapboxAnnotationExtensionTests"
-               ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+               BuildableName = "TrackasiaAnnotationExtensionTests.xctest"
+               BlueprintName = "TrackasiaAnnotationExtensionTests"
+               ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -41,29 +41,27 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07CBD7E622B8570400732884"
+            BuildableName = "TrackasiaAnnotationExtension.framework"
+            BlueprintName = "TrackasiaAnnotationExtension"
+            ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1FDAB5C222C3FAEB003D6D34"
-               BuildableName = "MapboxAnnotationExtensionTests.xctest"
-               BlueprintName = "MapboxAnnotationExtensionTests"
-               ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+               BuildableName = "TrackasiaAnnotationExtensionTests.xctest"
+               BlueprintName = "TrackasiaAnnotationExtensionTests"
+               ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07CBD7E622B8570400732884"
-            BuildableName = "MapboxAnnotationExtension.framework"
-            BlueprintName = "MapboxAnnotationExtension"
-            ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -79,13 +77,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07CBD7E622B8570400732884"
-            BuildableName = "MapboxAnnotationExtension.framework"
-            BlueprintName = "MapboxAnnotationExtension"
-            ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+            BuildableName = "TrackasiaAnnotationExtension.framework"
+            BlueprintName = "TrackasiaAnnotationExtension"
+            ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -97,9 +93,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07CBD7E622B8570400732884"
-            BuildableName = "MapboxAnnotationExtension.framework"
-            BlueprintName = "MapboxAnnotationExtension"
-            ReferencedContainer = "container:MapboxAnnotationExtension.xcodeproj">
+            BuildableName = "TrackasiaAnnotationExtension.framework"
+            BlueprintName = "TrackasiaAnnotationExtension"
+            ReferencedContainer = "container:TrackasiaAnnotationExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

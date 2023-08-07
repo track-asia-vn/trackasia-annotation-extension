@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  = "MapboxAnnotationExtension/**/*.{h,m}"
+  s.source_files  = "TrackasiaAnnotationExtension/**/*.{h,m}"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 

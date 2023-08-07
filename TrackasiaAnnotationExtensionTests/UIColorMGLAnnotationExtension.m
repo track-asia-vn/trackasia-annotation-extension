@@ -1,5 +1,5 @@
 #import <XCTest/XCTest.h>
-#import "../MapboxAnnotationExtension/Categories/UIColor+MGLAnnotationExtension.h"
+#import "../TrackasiaAnnotationExtension/Categories/UIColor+MGLAnnotationExtension.h"
 
 @interface UIColorMGLAnnotationExtension : XCTestCase
 

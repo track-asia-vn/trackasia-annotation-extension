@@ -13,3 +13,5 @@ Pods
 *.xcworkspace
 *.xcuserstate
 *documentation/api-docs/
+
+.history/
