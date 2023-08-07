@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.name         = "MapLibreAnnotationExtension"
+  s.name         = "TrackasiaAnnotationExtension"
   s.version      = "0.0.1-beta.2"
 
-  s.summary      = "Extension to support Maplibre's runtime styling annotations api."
+  s.summary      = "Extension to support Trackasia's runtime styling annotations api."
   s.description  = "Provides an object oriented annotation api around runtime styling."
 
    # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
 
    # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.authors      = { 'm0nac0' => 'github.com/m0nac0' }
-  s.homepage     = "https://github.com/m0nac0/maplibre-annotation-extension"
+  s.authors      = { '' => 'github.com/track-asia' }
+  s.homepage     = "https://github.com/track-asia/trackasia-annotation-extension"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/m0nac0/maplibre-annotation-extension.git" }
+  s.source       = { :git => "https://github.com/track-asia/trackasia-annotation-extension.git" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -32,8 +32,8 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.requires_arc = true
-  s.module_name = "MapLibreAnnotationExtension"
-  s.dependency "MapLibre", "~> 5.12.0"
+  s.module_name = "TrackasiaAnnotationExtension"
+  s.dependency "Trackasia", "~> 1.0.0"
 
   s.ios.deployment_target = '9.0'
 

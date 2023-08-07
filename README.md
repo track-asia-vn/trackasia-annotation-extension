@@ -1,6 +1,6 @@
-# This project is a fork of [MapboxAnnotationExtension](https://github.com/mapbox/mapbox-annotation-extension), aiming to make it work with [Maplibre's iOS SDK](https://github.com/maplibre/maplibre-gl-native). The migration to use the Maplibre SDK isn't completed, yet. Therefore this Extension currently should't be used!
+# This project is a fork of [MapboxAnnotationExtension](https://github.com/mapbox/mapbox-annotation-extension), aiming to make it work with [Trackasia's iOS SDK](https://github.com/trackasia/trackasia-gl-native). The migration to use the Trackasia SDK isn't completed, yet. Therefore this Extension currently should't be used!
 
-# Maplibre Annotation Extension for iOS
+# Trackasia Annotation Extension for iOS
 
 ---
 
@@ -8,27 +8,27 @@
 
 ---
 
-The Maplibre Annotation Extension is a lightweight library you can use with the Maplibre Maps SDK for iOS to quickly add basic shapes, icons, and other annotations to a map.
+The Trackasia Annotation Extension is a lightweight library you can use with the Trackasia Maps SDK for iOS to quickly add basic shapes, icons, and other annotations to a map.
 
 This extension leverages the power of runtime styling with an object oriented approach to simplify the creation and styling of annotations.
 
 
 ### Using CocoaPods
-To install the Maplibre Annotation Extension using CocoaPods:
+To install the Trackasia Annotation Extension using CocoaPods:
 
 Create a Podfile with the following specification:
 
 ```
-pod 'MaplibreAnnotationExtension', '0.0.1-beta.2'
+pod 'TrackasiaAnnotationExtension', '0.0.1-beta.2'
 ```
 
 Run `pod repo update && pod install` and open the resulting Xcode workspace.
 
 ### Manual Installation
 
-Download and unzip the latest [release](https://github.com/m0nac0/maplibre-annotation-extension/releases).
+Download and unzip the latest [release](https://github.com/track-asia/trackasia-annotation-extension/releases).
 
-Drag **MaplibreAnnotationExtension.framework** into your project's Embedded Binaries section in the project editor. In the sheet that appears, make sure "Copy items if needed" is checked, then select Finish.
+Drag **TrackasiaAnnotationExtension.framework** into your project's Embedded Binaries section in the project editor. In the sheet that appears, make sure "Copy items if needed" is checked, then select Finish.
 
 
 ### Carthage & Swift Package Manager
@@ -41,7 +41,7 @@ You can find a sample application within this project by running the `annotation
 
 ## Usage
 
-The Maplibre Annotation Extension supports the addition of circles, lines, polygons, and symbols. Each shape type has its own corresponding controller which manages the addition of multiple shape objects of the same type.
+The Trackasia Annotation Extension supports the addition of circles, lines, polygons, and symbols. Each shape type has its own corresponding controller which manages the addition of multiple shape objects of the same type.
 
 Since the map needs to be finished loading before adding shapes to it, all shapes should be added within the `MGLMapView:didFinishLoadingStyle:`delegate method.
 
@@ -279,7 +279,7 @@ _Icon image & symbol text_
 
 Please note that this is an experimental project and is subject to change.
 
-If you have questions or feedback, please open a [new issue](https://github.com/m0nac0/maplibre-annotation-extension/issues/new) in this repository.
+If you have questions or feedback, please open a [new issue](https://github.com/track-asia/trackasia-annotation-extension/issues/new) in this repository.
 
 If you'd like to report a bug, please include as much information as possible so that we can quickly reproduce the issue.
 
