@@ -9,7 +9,7 @@ xcuserdata
 *.xcbuild
 *build
 *.xcscmblueprint
-Pods
+# Pods
 *.xcworkspace
 *.xcuserstate
 *documentation/api-docs/

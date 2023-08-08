@@ -1,0 +1,21 @@
+{
+  "name": "Trackasia",
+  "version": "1.0.0",
+  "license": {
+    "type": "Unspecified"
+  },
+  "homepage": "https://github.com/track-asia-vn/",
+  "authors": {
+    "Trackasia": ""
+  },
+  "summary": "Open source vector map solution for iOS with full styling capabilities.",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "http": "https://github.com/track-asia-vn/trackasia-native/releases/download/ios-v1.0.0/Mapbox-1.0.0.zip"
+  },
+  "ios": {
+    "vendored_frameworks": "Mapbox.xcframework"
+  }
+}
