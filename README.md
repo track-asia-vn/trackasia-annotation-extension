@@ -19,7 +19,7 @@ To install the Trackasia Annotation Extension using CocoaPods:
 Create a Podfile with the following specification:
 
 ```
-pod 'TrackasiaAnnotationExtension', '0.0.1-beta.2'
+pod 'TrackasiaAnnotationExtension', '1.0.0'
 ```
 
 Run `pod repo update && pod install` and open the resulting Xcode workspace.

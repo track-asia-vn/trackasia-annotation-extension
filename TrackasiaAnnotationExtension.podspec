@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "TrackasiaAnnotationExtension"
-  s.version      = "0.0.1-beta.2"
+  s.version      = "1.0.0"
 
   s.summary      = "Extension to support Trackasia's runtime styling annotations api."
   s.description  = "Provides an object oriented annotation api around runtime styling."
