@@ -6,12 +6,12 @@ xcuserdata
 *.xccheckout
 *.moved-aside
 *.xcuserstate
-*.xcbuild
-*build
+# *.xcbuild
+# *build
 *.xcscmblueprint
 # Pods
-*.xcworkspace
-*.xcuserstate
+# *.xcworkspace
+# *.xcuserstate
 *documentation/api-docs/
 
-.history/
+# .history/

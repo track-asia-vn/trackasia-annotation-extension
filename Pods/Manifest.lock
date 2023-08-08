@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Trackasia:
-    :commit: 2a5c2ae3abd6193a783bb3e3837cc58d4d85a074
+    :commit: 16aaa269a7b873512b92392e147b532cc9bbc4a8
     :git: https://github.com/track-asia-vn/trackasia-cocoapods.git
 
 SPEC CHECKSUMS:
-  Trackasia: 602e37930b9226c31785aa39aa3e5134f0aa26a2
+  Trackasia: 1d38fd97d5d607bcb1c106da3c9a5bf9ed24f026
 
 PODFILE CHECKSUM: d1c65963a82831e8b8264d24d6e842ba9cb8f4c7
 

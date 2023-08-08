@@ -1,6 +1,6 @@
 .DS_Store
-# *.build
-# *.framework
+*.build
+*.framework
 *.build/*
 xcuserdata
 *.xccheckout
@@ -10,8 +10,8 @@ xcuserdata
 # *build
 *.xcscmblueprint
 # Pods
-# *.xcworkspace
-# *.xcuserstate
+*.xcworkspace
+*.xcuserstate
 *documentation/api-docs/
 
 # .history/
