@@ -6,7 +6,7 @@ xcuserdata
 *.xccheckout
 *.moved-aside
 *.xcuserstate
-# *.xcbuild
+*.xcbuild
 *build
 *.xcscmblueprint
 # Pods
@@ -14,4 +14,4 @@ xcuserdata
 *.xcuserstate
 *documentation/api-docs/
 
-# .history/
+.history/
