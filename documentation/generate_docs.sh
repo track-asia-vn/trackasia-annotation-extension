@@ -20,7 +20,7 @@ fi
 
 # Search for `s.version` in podspec, grab the first result, 
 # and return only the version between quotes
-VERSION=$( grep -n "s.version" TrackasiaAnnotationExtension.podspec | head -n 1 | cut -d \" -f2 )
+VERSION=$( grep -n "s.version" MapboxAnnotationExtension.podspec | head -n 1 | cut -d \" -f2 )
 
 step "Jazzy installed. \nGenerating docs for Mapbox Annotation Extension ${VERSION}..."
 

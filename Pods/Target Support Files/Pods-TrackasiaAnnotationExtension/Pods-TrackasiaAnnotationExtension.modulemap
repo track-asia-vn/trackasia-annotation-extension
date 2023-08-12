@@ -1,6 +1,0 @@
-framework module Pods_TrackasiaAnnotationExtension {
-  umbrella header "Pods-TrackasiaAnnotationExtension-umbrella.h"
-
-  export *
-  module * { export * }
-}

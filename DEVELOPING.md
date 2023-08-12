@@ -16,7 +16,7 @@ This project is documented with [Jazzy](https://github.com/realm/jazzy) (v0.10.0
 
 ## Testing
 
-Tests can be found in the `TrackasiaAnnotationsExtensionTests` group within the `TrackasiaAnnotationsExtension` target.
+Tests can be found in the `MapboxAnnotationsExtensionTests` group within the `MapboxAnnotationsExtension` target.
 
 ## Sample project
 

@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-import TrackasiaAnnotationExtension
+import MapboxAnnotationExtension
 
 class StyleAnnotationSettingsView: UIStackView {
     var annotation: MGLStyleAnnotation!

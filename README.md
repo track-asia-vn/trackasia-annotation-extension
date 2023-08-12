@@ -1,4 +1,4 @@
-# This project is a fork of [TrackasiaAnnotationExtension](https://github.com/mapbox/mapbox-annotation-extension), aiming to make it work with [Trackasia's iOS SDK](https://github.com/trackasia/trackasia-gl-native). The migration to use the Trackasia SDK isn't completed, yet. Therefore this Extension currently should't be used!
+# This project is a fork of [MapboxAnnotationExtension](https://github.com/mapbox/mapbox-annotation-extension), aiming to make it work with [Trackasia's iOS SDK](https://github.com/trackasia/trackasia-gl-native). The migration to use the Trackasia SDK isn't completed, yet. Therefore this Extension currently should't be used!
 
 # Trackasia Annotation Extension for iOS
 

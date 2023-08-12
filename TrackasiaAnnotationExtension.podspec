@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
    # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.authors      = { '' => 'github.com/track-asia' }
+  s.authors      = { 'track-asia' => 'github.com/track-asia' }
   s.homepage     = "https://github.com/track-asia/trackasia-annotation-extension"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  = "TrackasiaAnnotationExtension/**/*.{h,m}"
+  s.source_files  = "MapboxAnnotationExtension/**/*.{h,m}"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
