@@ -24,7 +24,7 @@
 		07B8BFAE22F8ED3D0015EDCD /* AnnotationStyleSettingsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B8BFAD22F8ED3D0015EDCD /* AnnotationStyleSettingsDelegate.swift */; };
 		07B8BFB122F9E7DB0015EDCD /* PresentationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B8BFB022F9E7DB0015EDCD /* PresentationControllerDelegate.swift */; };
 		07B8BFB422FA31A20015EDCD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B8BFB322FA31A20015EDCD /* Extensions.swift */; };
-		07CBD7EC22B8570400732884 /* MapboxAnnotationExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 07CBD7EA22B8570400732884 /* MapboxAnnotationExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07CBD7EC22B8570400732884 /* TrackasiaAnnotationExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 07CBD7EA22B8570400732884 /* TrackasiaAnnotationExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07F8B26522FCECBB0058ED0C /* StyleAnnotationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B26422FCECBB0058ED0C /* StyleAnnotationSettingsView.swift */; };
 		1F40B9AC22BC1B03003DB389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F40B9AB22BC1B03003DB389 /* AppDelegate.swift */; };
 		1F40B9AE22BC1B03003DB389 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F40B9AD22BC1B03003DB389 /* MapViewController.swift */; };
@@ -64,9 +64,9 @@
 		1FDAB57622BD800A003D6D34 /* MGLCircleAnnotationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F40B9D122BC3136003DB389 /* MGLCircleAnnotationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FDAB57722BD8018003D6D34 /* MGLLineAnnotationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F40B9D922BC3164003DB389 /* MGLLineAnnotationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FDAB57822BD801E003D6D34 /* MGLPolygonAnnotationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F40B9DD22BC31D6003DB389 /* MGLPolygonAnnotationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FDAB58822BD8DD7003D6D34 /* MapboxAnnotationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CBD7E722B8570400732884 /* MapboxAnnotationExtension.framework */; };
-		1FDAB58922BD8DD7003D6D34 /* MapboxAnnotationExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07CBD7E722B8570400732884 /* MapboxAnnotationExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1FDAB5C822C3FAEB003D6D34 /* MapboxAnnotationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CBD7E722B8570400732884 /* MapboxAnnotationExtension.framework */; };
+		1FDAB58822BD8DD7003D6D34 /* TrackasiaAnnotationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CBD7E722B8570400732884 /* TrackasiaAnnotationExtension.framework */; };
+		1FDAB58922BD8DD7003D6D34 /* TrackasiaAnnotationExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07CBD7E722B8570400732884 /* TrackasiaAnnotationExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FDAB5C822C3FAEB003D6D34 /* TrackasiaAnnotationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CBD7E722B8570400732884 /* TrackasiaAnnotationExtension.framework */; };
 		1FDAB5D222C4245B003D6D34 /* UIColor+MGLAnnotationExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDAB5D022C4245B003D6D34 /* UIColor+MGLAnnotationExtension.h */; };
 		1FDAB5D322C4245B003D6D34 /* UIColor+MGLAnnotationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAB5D122C4245B003D6D34 /* UIColor+MGLAnnotationExtension.m */; };
 		1FDAB5D522C42564003D6D34 /* UIColorMGLAnnotationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAB5D422C42564003D6D34 /* UIColorMGLAnnotationExtension.m */; };
@@ -77,8 +77,8 @@
 		1FDAB5E122C55EB0003D6D34 /* MGLCircleStyleAnnotation_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDAB5DF22C55EB0003D6D34 /* MGLCircleStyleAnnotation_Private.h */; };
 		1FDAB5E522C5AF79003D6D34 /* MGLStyleAnnotation_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDAB5E322C5AF79003D6D34 /* MGLStyleAnnotation_Private.h */; };
 		372699A6A03B0EEA9FE92DD9 /* Pods_annotationapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38AF688BC1F6AD1BA4503AF /* Pods_annotationapp.framework */; };
-		A718926FAF99F9C400DF39C3 /* Pods_MapboxAnnotationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA033A3BEF2B49399AD5597 /* Pods_MapboxAnnotationExtension.framework */; };
-		FBBC96FEFA3D0CEE0CC05160 /* Pods_MapboxAnnotationExtension_MapboxAnnotationExtensionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CD0F42057615B47DE62F5D /* Pods_MapboxAnnotationExtension_MapboxAnnotationExtensionTests.framework */; };
+		A718926FAF99F9C400DF39C3 /* Pods_TrackasiaAnnotationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA033A3BEF2B49399AD5597 /* Pods_TrackasiaAnnotationExtension.framework */; };
+		FBBC96FEFA3D0CEE0CC05160 /* Pods_TrackasiaAnnotationExtension_TrackasiaAnnotationExtensionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CD0F42057615B47DE62F5D /* Pods_TrackasiaAnnotationExtension_TrackasiaAnnotationExtensionTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,14 +94,14 @@
 			containerPortal = 07CBD7DE22B8570400732884 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 07CBD7E622B8570400732884;
-			remoteInfo = MapboxAnnotationsExtension;
+			remoteInfo = TrackasiaAnnotationsExtension;
 		};
 		1FDAB5C922C3FAEB003D6D34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07CBD7DE22B8570400732884 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 07CBD7E622B8570400732884;
-			remoteInfo = MapboxAnnotationsExtension;
+			remoteInfo = TrackasiaAnnotationsExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -112,7 +112,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1FDAB58922BD8DD7003D6D34 /* MapboxAnnotationExtension.framework in Embed Frameworks */,
+				1FDAB58922BD8DD7003D6D34 /* TrackasiaAnnotationExtension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +137,8 @@
 		07B8BFAD22F8ED3D0015EDCD /* AnnotationStyleSettingsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationStyleSettingsDelegate.swift; sourceTree = "<group>"; };
 		07B8BFB022F9E7DB0015EDCD /* PresentationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationControllerDelegate.swift; sourceTree = "<group>"; };
 		07B8BFB322FA31A20015EDCD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		07CBD7E722B8570400732884 /* MapboxAnnotationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxAnnotationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07CBD7EA22B8570400732884 /* MapboxAnnotationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapboxAnnotationExtension.h; sourceTree = "<group>"; };
+		07CBD7E722B8570400732884 /* TrackasiaAnnotationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrackasiaAnnotationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07CBD7EA22B8570400732884 /* TrackasiaAnnotationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackasiaAnnotationExtension.h; sourceTree = "<group>"; };
 		07CBD7EB22B8570400732884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F8B26422FCECBB0058ED0C /* StyleAnnotationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleAnnotationSettingsView.swift; sourceTree = "<group>"; };
 		1BDEECA79ABC64ED33D61483 /* Pods-annotationapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-annotationapp.debug.xcconfig"; path = "Target Support Files/Pods-annotationapp/Pods-annotationapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		1FDAB56D22BD5065003D6D34 /* MGLPolygonStyleAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGLPolygonStyleAnnotation.m; sourceTree = "<group>"; };
 		1FDAB57022BD5083003D6D34 /* MGLSymbolStyleAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGLSymbolStyleAnnotation.h; sourceTree = "<group>"; };
 		1FDAB57122BD5083003D6D34 /* MGLSymbolStyleAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGLSymbolStyleAnnotation.m; sourceTree = "<group>"; };
-		1FDAB5C322C3FAEB003D6D34 /* MapboxAnnotationExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxAnnotationExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDAB5C322C3FAEB003D6D34 /* TrackasiaAnnotationExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackasiaAnnotationExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDAB5C722C3FAEB003D6D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FDAB5D022C4245B003D6D34 /* UIColor+MGLAnnotationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MGLAnnotationExtension.h"; sourceTree = "<group>"; };
 		1FDAB5D122C4245B003D6D34 /* UIColor+MGLAnnotationExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MGLAnnotationExtension.m"; sourceTree = "<group>"; };
@@ -196,21 +196,21 @@
 		1FDAB5DF22C55EB0003D6D34 /* MGLCircleStyleAnnotation_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGLCircleStyleAnnotation_Private.h; sourceTree = "<group>"; };
 		1FDAB5E322C5AF79003D6D34 /* MGLStyleAnnotation_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGLStyleAnnotation_Private.h; sourceTree = "<group>"; };
 		26E77B23BBD30F6F235857DC /* Pods-annotations-framework-extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-annotations-framework-extension.debug.xcconfig"; path = "Target Support Files/Pods-annotations-framework-extension/Pods-annotations-framework-extension.debug.xcconfig"; sourceTree = "<group>"; };
-		33C2AF676D4891A0F96B75C1 /* Pods-MapboxAnnotationsExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationsExtension.debug.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationsExtension/Pods-MapboxAnnotationsExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		4B9A8FB4B4144BFC0B170BB4 /* Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests/Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
-		50CD0F42057615B47DE62F5D /* Pods_MapboxAnnotationExtension_MapboxAnnotationExtensionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapboxAnnotationExtension_MapboxAnnotationExtensionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5490FCCC0AF772BC216A696D /* Pods-MapboxAnnotationExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationExtension.debug.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationExtension/Pods-MapboxAnnotationExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		33C2AF676D4891A0F96B75C1 /* Pods-TrackasiaAnnotationsExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationsExtension.debug.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationsExtension/Pods-TrackasiaAnnotationsExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		4B9A8FB4B4144BFC0B170BB4 /* Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests/Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
+		50CD0F42057615B47DE62F5D /* Pods_TrackasiaAnnotationExtension_TrackasiaAnnotationExtensionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackasiaAnnotationExtension_TrackasiaAnnotationExtensionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5490FCCC0AF772BC216A696D /* Pods-TrackasiaAnnotationExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationExtension.debug.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationExtension/Pods-TrackasiaAnnotationExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		8B53066538961005A56AE6BE /* Pods-annotations-framework-extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-annotations-framework-extension.release.xcconfig"; path = "Target Support Files/Pods-annotations-framework-extension/Pods-annotations-framework-extension.release.xcconfig"; sourceTree = "<group>"; };
-		A0FD9872645FB713D831D139 /* Pods-MapboxAnnotationsExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationsExtension.release.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationsExtension/Pods-MapboxAnnotationsExtension.release.xcconfig"; sourceTree = "<group>"; };
-		A3519048506DD7AFBB754731 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests/Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D438D07AACEB8C07006D7D7A /* Pods-MapboxAnnotationExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationExtension.release.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationExtension/Pods-MapboxAnnotationExtension.release.xcconfig"; sourceTree = "<group>"; };
-		DA88D7EBEEE37718EFECCFAD /* Pods-MapboxAnnotationsExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationsExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationsExtensionTests/Pods-MapboxAnnotationsExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0FD9872645FB713D831D139 /* Pods-TrackasiaAnnotationsExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationsExtension.release.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationsExtension/Pods-TrackasiaAnnotationsExtension.release.xcconfig"; sourceTree = "<group>"; };
+		A3519048506DD7AFBB754731 /* Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D438D07AACEB8C07006D7D7A /* Pods-TrackasiaAnnotationExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationExtension.release.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationExtension/Pods-TrackasiaAnnotationExtension.release.xcconfig"; sourceTree = "<group>"; };
+		DA88D7EBEEE37718EFECCFAD /* Pods-TrackasiaAnnotationsExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationsExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationsExtensionTests/Pods-TrackasiaAnnotationsExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF334744709F801E4EE94EAE /* Pods-annotationapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-annotationapp.release.xcconfig"; path = "Target Support Files/Pods-annotationapp/Pods-annotationapp.release.xcconfig"; sourceTree = "<group>"; };
-		E7EA0C455F327E8362556217 /* Pods-MapboxAnnotationsExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationsExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationsExtensionTests/Pods-MapboxAnnotationsExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
-		EC5B4BE389BE2B0BE4F56589 /* Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests/Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7EA0C455F327E8362556217 /* Pods-TrackasiaAnnotationsExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationsExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationsExtensionTests/Pods-TrackasiaAnnotationsExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC5B4BE389BE2B0BE4F56589 /* Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests/Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F38AF688BC1F6AD1BA4503AF /* Pods_annotationapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_annotationapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC18D5CE8AECD3248807BF64 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests/Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
-		FFA033A3BEF2B49399AD5597 /* Pods_MapboxAnnotationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapboxAnnotationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC18D5CE8AECD3248807BF64 /* Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
+		FFA033A3BEF2B49399AD5597 /* Pods_TrackasiaAnnotationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackasiaAnnotationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A718926FAF99F9C400DF39C3 /* Pods_MapboxAnnotationExtension.framework in Frameworks */,
+				A718926FAF99F9C400DF39C3 /* Pods_TrackasiaAnnotationExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FDAB58822BD8DD7003D6D34 /* MapboxAnnotationExtension.framework in Frameworks */,
+				1FDAB58822BD8DD7003D6D34 /* TrackasiaAnnotationExtension.framework in Frameworks */,
 				372699A6A03B0EEA9FE92DD9 /* Pods_annotationapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,8 +242,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FDAB5C822C3FAEB003D6D34 /* MapboxAnnotationExtension.framework in Frameworks */,
-				FBBC96FEFA3D0CEE0CC05160 /* Pods_MapboxAnnotationExtension_MapboxAnnotationExtensionTests.framework in Frameworks */,
+				1FDAB5C822C3FAEB003D6D34 /* TrackasiaAnnotationExtension.framework in Frameworks */,
+				FBBC96FEFA3D0CEE0CC05160 /* Pods_TrackasiaAnnotationExtension_TrackasiaAnnotationExtensionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +306,8 @@
 		07CBD7DD22B8570400732884 = {
 			isa = PBXGroup;
 			children = (
-				07CBD7E922B8570400732884 /* MapboxAnnotationExtension */,
-				1FDAB5C422C3FAEB003D6D34 /* MapboxAnnotationExtensionTests */,
+				07CBD7E922B8570400732884 /* TrackasiaAnnotationExtension */,
+				1FDAB5C422C3FAEB003D6D34 /* TrackasiaAnnotationExtensionTests */,
 				1F40B9AA22BC1B03003DB389 /* annotationapp */,
 				1F40B9BF22BC1B05003DB389 /* annotationappTests */,
 				07CBD7E822B8570400732884 /* Products */,
@@ -319,25 +319,25 @@
 		07CBD7E822B8570400732884 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07CBD7E722B8570400732884 /* MapboxAnnotationExtension.framework */,
+				07CBD7E722B8570400732884 /* TrackasiaAnnotationExtension.framework */,
 				1F40B9A922BC1B03003DB389 /* annotationapp.app */,
 				1F40B9BC22BC1B05003DB389 /* annotationappTests.xctest */,
-				1FDAB5C322C3FAEB003D6D34 /* MapboxAnnotationExtensionTests.xctest */,
+				1FDAB5C322C3FAEB003D6D34 /* TrackasiaAnnotationExtensionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07CBD7E922B8570400732884 /* MapboxAnnotationExtension */ = {
+		07CBD7E922B8570400732884 /* TrackasiaAnnotationExtension */ = {
 			isa = PBXGroup;
 			children = (
 				1FC06ED922E9212E00B9ECAE /* Views */,
-				07CBD7EA22B8570400732884 /* MapboxAnnotationExtension.h */,
+				07CBD7EA22B8570400732884 /* TrackasiaAnnotationExtension.h */,
 				1F40B9CA22BC1B3C003DB389 /* Annotations */,
 				1FDAB5CF22C41EF1003D6D34 /* Categories */,
 				1F40B9C922BC1B2E003DB389 /* Controllers */,
 				07CBD7EB22B8570400732884 /* Info.plist */,
 			);
-			path = MapboxAnnotationExtension;
+			path = TrackasiaAnnotationExtension;
 			sourceTree = "<group>";
 		};
 		1F40B9AA22BC1B03003DB389 /* annotationapp */ = {
@@ -413,7 +413,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1FDAB5C422C3FAEB003D6D34 /* MapboxAnnotationExtensionTests */ = {
+		1FDAB5C422C3FAEB003D6D34 /* TrackasiaAnnotationExtensionTests */ = {
 			isa = PBXGroup;
 			children = (
 				1FDAB5C722C3FAEB003D6D34 /* Info.plist */,
@@ -428,7 +428,7 @@
 				1FD771EC22CD3E4900B626DC /* MGLSymbolStyleAnnotationTests.m */,
 				1FD771EE22CD3E5E00B626DC /* MGLSymbolAnnotationControllerTests.m */,
 			);
-			path = MapboxAnnotationExtensionTests;
+			path = TrackasiaAnnotationExtensionTests;
 			sourceTree = "<group>";
 		};
 		1FDAB5CF22C41EF1003D6D34 /* Categories */ = {
@@ -448,8 +448,8 @@
 			isa = PBXGroup;
 			children = (
 				F38AF688BC1F6AD1BA4503AF /* Pods_annotationapp.framework */,
-				FFA033A3BEF2B49399AD5597 /* Pods_MapboxAnnotationExtension.framework */,
-				50CD0F42057615B47DE62F5D /* Pods_MapboxAnnotationExtension_MapboxAnnotationExtensionTests.framework */,
+				FFA033A3BEF2B49399AD5597 /* Pods_TrackasiaAnnotationExtension.framework */,
+				50CD0F42057615B47DE62F5D /* Pods_TrackasiaAnnotationExtension_TrackasiaAnnotationExtensionTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -461,16 +461,16 @@
 				DF334744709F801E4EE94EAE /* Pods-annotationapp.release.xcconfig */,
 				26E77B23BBD30F6F235857DC /* Pods-annotations-framework-extension.debug.xcconfig */,
 				8B53066538961005A56AE6BE /* Pods-annotations-framework-extension.release.xcconfig */,
-				33C2AF676D4891A0F96B75C1 /* Pods-MapboxAnnotationsExtension.debug.xcconfig */,
-				A0FD9872645FB713D831D139 /* Pods-MapboxAnnotationsExtension.release.xcconfig */,
-				DA88D7EBEEE37718EFECCFAD /* Pods-MapboxAnnotationsExtensionTests.debug.xcconfig */,
-				E7EA0C455F327E8362556217 /* Pods-MapboxAnnotationsExtensionTests.release.xcconfig */,
-				EC5B4BE389BE2B0BE4F56589 /* Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.debug.xcconfig */,
-				4B9A8FB4B4144BFC0B170BB4 /* Pods-MapboxAnnotationsExtension-MapboxAnnotationsExtensionTests.release.xcconfig */,
-				5490FCCC0AF772BC216A696D /* Pods-MapboxAnnotationExtension.debug.xcconfig */,
-				D438D07AACEB8C07006D7D7A /* Pods-MapboxAnnotationExtension.release.xcconfig */,
-				A3519048506DD7AFBB754731 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.debug.xcconfig */,
-				FC18D5CE8AECD3248807BF64 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.release.xcconfig */,
+				33C2AF676D4891A0F96B75C1 /* Pods-TrackasiaAnnotationsExtension.debug.xcconfig */,
+				A0FD9872645FB713D831D139 /* Pods-TrackasiaAnnotationsExtension.release.xcconfig */,
+				DA88D7EBEEE37718EFECCFAD /* Pods-TrackasiaAnnotationsExtensionTests.debug.xcconfig */,
+				E7EA0C455F327E8362556217 /* Pods-TrackasiaAnnotationsExtensionTests.release.xcconfig */,
+				EC5B4BE389BE2B0BE4F56589 /* Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.debug.xcconfig */,
+				4B9A8FB4B4144BFC0B170BB4 /* Pods-TrackasiaAnnotationsExtension-TrackasiaAnnotationsExtensionTests.release.xcconfig */,
+				5490FCCC0AF772BC216A696D /* Pods-TrackasiaAnnotationExtension.debug.xcconfig */,
+				D438D07AACEB8C07006D7D7A /* Pods-TrackasiaAnnotationExtension.release.xcconfig */,
+				A3519048506DD7AFBB754731 /* Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.debug.xcconfig */,
+				FC18D5CE8AECD3248807BF64 /* Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -493,7 +493,7 @@
 				1FDAB56A22BD5050003D6D34 /* MGLLineStyleAnnotation.h in Headers */,
 				1F40B9D722BC3150003DB389 /* MGLSymbolAnnotationController.h in Headers */,
 				1FDAB57522BD7FCE003D6D34 /* MGLAnnotationController.h in Headers */,
-				07CBD7EC22B8570400732884 /* MapboxAnnotationExtension.h in Headers */,
+				07CBD7EC22B8570400732884 /* TrackasiaAnnotationExtension.h in Headers */,
 				1FDAB57722BD8018003D6D34 /* MGLLineAnnotationController.h in Headers */,
 				1FDAB56622BD5039003D6D34 /* MGLCircleStyleAnnotation.h in Headers */,
 				1FDAB5D222C4245B003D6D34 /* UIColor+MGLAnnotationExtension.h in Headers */,
@@ -509,9 +509,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		07CBD7E622B8570400732884 /* MapboxAnnotationExtension */ = {
+		07CBD7E622B8570400732884 /* TrackasiaAnnotationExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07CBD7EF22B8570400732884 /* Build configuration list for PBXNativeTarget "MapboxAnnotationExtension" */;
+			buildConfigurationList = 07CBD7EF22B8570400732884 /* Build configuration list for PBXNativeTarget "TrackasiaAnnotationExtension" */;
 			buildPhases = (
 				2E3DA699DCCB584159BE8452 /* [CP] Check Pods Manifest.lock */,
 				07CBD7E222B8570400732884 /* Headers */,
@@ -523,9 +523,9 @@
 			);
 			dependencies = (
 			);
-			name = MapboxAnnotationExtension;
+			name = TrackasiaAnnotationExtension;
 			productName = "annotations-framework-extension";
-			productReference = 07CBD7E722B8570400732884 /* MapboxAnnotationExtension.framework */;
+			productReference = 07CBD7E722B8570400732884 /* TrackasiaAnnotationExtension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1F40B9A822BC1B03003DB389 /* annotationapp */ = {
@@ -538,6 +538,7 @@
 				1F40B9A722BC1B03003DB389 /* Resources */,
 				1FDAB58C22BD8DD7003D6D34 /* Embed Frameworks */,
 				1FDAB57422BD7877003D6D34 /* Insert Mapbox Access Token */,
+				BFA7804800ADD24A21068BD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -567,23 +568,24 @@
 			productReference = 1F40B9BC22BC1B05003DB389 /* annotationappTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1FDAB5C222C3FAEB003D6D34 /* MapboxAnnotationExtensionTests */ = {
+		1FDAB5C222C3FAEB003D6D34 /* TrackasiaAnnotationExtensionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FDAB5CD22C3FAEB003D6D34 /* Build configuration list for PBXNativeTarget "MapboxAnnotationExtensionTests" */;
+			buildConfigurationList = 1FDAB5CD22C3FAEB003D6D34 /* Build configuration list for PBXNativeTarget "TrackasiaAnnotationExtensionTests" */;
 			buildPhases = (
 				4F7E3A1792B1FC59FC48A777 /* [CP] Check Pods Manifest.lock */,
 				1FDAB5BF22C3FAEB003D6D34 /* Sources */,
 				1FDAB5C022C3FAEB003D6D34 /* Frameworks */,
 				1FDAB5C122C3FAEB003D6D34 /* Resources */,
+				7AFB76A416F38D5C2239D4BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1FDAB5CA22C3FAEB003D6D34 /* PBXTargetDependency */,
 			);
-			name = MapboxAnnotationExtensionTests;
-			productName = MapboxAnnotationsExtensionTests;
-			productReference = 1FDAB5C322C3FAEB003D6D34 /* MapboxAnnotationExtensionTests.xctest */;
+			name = TrackasiaAnnotationExtensionTests;
+			productName = TrackasiaAnnotationsExtensionTests;
+			productReference = 1FDAB5C322C3FAEB003D6D34 /* TrackasiaAnnotationExtensionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -612,7 +614,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07CBD7E122B8570400732884 /* Build configuration list for PBXProject "MapboxAnnotationExtension" */;
+			buildConfigurationList = 07CBD7E122B8570400732884 /* Build configuration list for PBXProject "TrackasiaAnnotationExtension" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -625,10 +627,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07CBD7E622B8570400732884 /* MapboxAnnotationExtension */,
+				07CBD7E622B8570400732884 /* TrackasiaAnnotationExtension */,
 				1F40B9A822BC1B03003DB389 /* annotationapp */,
 				1F40B9BB22BC1B05003DB389 /* annotationappTests */,
-				1FDAB5C222C3FAEB003D6D34 /* MapboxAnnotationExtensionTests */,
+				1FDAB5C222C3FAEB003D6D34 /* TrackasiaAnnotationExtensionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -703,7 +705,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapboxAnnotationExtension-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TrackasiaAnnotationExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -725,11 +727,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFB76A416F38D5C2239D4BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests/Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97DEF6868EBC6E772F04E9AC /* [CP] Check Pods Manifest.lock */ = {
@@ -752,6 +771,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA7804800ADD24A21068BD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-annotationapp/Pods-annotationapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -836,12 +872,12 @@
 		};
 		1FDAB58B22BD8DD7003D6D34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07CBD7E622B8570400732884 /* MapboxAnnotationExtension */;
+			target = 07CBD7E622B8570400732884 /* TrackasiaAnnotationExtension */;
 			targetProxy = 1FDAB58A22BD8DD7003D6D34 /* PBXContainerItemProxy */;
 		};
 		1FDAB5CA22C3FAEB003D6D34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07CBD7E622B8570400732884 /* MapboxAnnotationExtension */;
+			target = 07CBD7E622B8570400732884 /* TrackasiaAnnotationExtension */;
 			targetProxy = 1FDAB5C922C3FAEB003D6D34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -986,7 +1022,7 @@
 		};
 		07CBD7F022B8570400732884 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5490FCCC0AF772BC216A696D /* Pods-MapboxAnnotationExtension.debug.xcconfig */;
+			baseConfigurationReference = 5490FCCC0AF772BC216A696D /* Pods-TrackasiaAnnotationExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -996,7 +1032,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/MapboxAnnotationExtension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrackasiaAnnotationExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1004,7 +1040,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxAnnotationExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.TrackasiaAnnotationExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1015,7 +1051,7 @@
 		};
 		07CBD7F122B8570400732884 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D438D07AACEB8C07006D7D7A /* Pods-MapboxAnnotationExtension.release.xcconfig */;
+			baseConfigurationReference = D438D07AACEB8C07006D7D7A /* Pods-TrackasiaAnnotationExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1025,7 +1061,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/MapboxAnnotationExtension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TrackasiaAnnotationExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1033,7 +1069,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxAnnotationExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.TrackasiaAnnotationExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1135,18 +1171,18 @@
 		};
 		1FDAB5CB22C3FAEB003D6D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3519048506DD7AFBB754731 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.debug.xcconfig */;
+			baseConfigurationReference = A3519048506DD7AFBB754731 /* Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJZR2MEM28;
-				INFOPLIST_FILE = MapboxAnnotationExtensionTests/Info.plist;
+				INFOPLIST_FILE = TrackasiaAnnotationExtensionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxAnnotationExtensionTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.TrackasiaAnnotationExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1154,18 +1190,18 @@
 		};
 		1FDAB5CC22C3FAEB003D6D34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC18D5CE8AECD3248807BF64 /* Pods-MapboxAnnotationExtension-MapboxAnnotationExtensionTests.release.xcconfig */;
+			baseConfigurationReference = FC18D5CE8AECD3248807BF64 /* Pods-TrackasiaAnnotationExtension-TrackasiaAnnotationExtensionTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJZR2MEM28;
-				INFOPLIST_FILE = MapboxAnnotationExtensionTests/Info.plist;
+				INFOPLIST_FILE = TrackasiaAnnotationExtensionTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxAnnotationExtensionTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.TrackasiaAnnotationExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1174,7 +1210,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07CBD7E122B8570400732884 /* Build configuration list for PBXProject "MapboxAnnotationExtension" */ = {
+		07CBD7E122B8570400732884 /* Build configuration list for PBXProject "TrackasiaAnnotationExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07CBD7ED22B8570400732884 /* Debug */,
@@ -1183,7 +1219,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07CBD7EF22B8570400732884 /* Build configuration list for PBXNativeTarget "MapboxAnnotationExtension" */ = {
+		07CBD7EF22B8570400732884 /* Build configuration list for PBXNativeTarget "TrackasiaAnnotationExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07CBD7F022B8570400732884 /* Debug */,
@@ -1210,7 +1246,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FDAB5CD22C3FAEB003D6D34 /* Build configuration list for PBXNativeTarget "MapboxAnnotationExtensionTests" */ = {
+		1FDAB5CD22C3FAEB003D6D34 /* Build configuration list for PBXNativeTarget "TrackasiaAnnotationExtensionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FDAB5CB22C3FAEB003D6D34 /* Debug */,

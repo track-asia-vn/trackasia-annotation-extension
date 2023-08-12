@@ -6,10 +6,10 @@ def shared_pods
   pod 'Trackasia', :git => 'https://github.com/track-asia/trackasia-cocoapods.git'
 end
 
-target 'MapboxAnnotationExtension' do
+target 'TrackasiaAnnotationExtension' do
   shared_pods
 
-  target 'MapboxAnnotationExtensionTests' do
+  target 'TrackasiaAnnotationExtensionTests' do
 
   end
 

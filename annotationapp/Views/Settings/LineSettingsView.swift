@@ -1,5 +1,5 @@
 import UIKit
-import MapboxAnnotationExtension
+import TrackasiaAnnotationExtension
 
 class LineSettingsView: StyleAnnotationSettingsView {   
     
