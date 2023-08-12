@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
   s.module_name = "TrackasiaAnnotationExtension"
   s.dependency "Trackasia", "~> 1.0.0"
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
 
 end
