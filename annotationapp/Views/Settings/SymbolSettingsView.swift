@@ -3,7 +3,7 @@ import TrackasiaAnnotationExtension
 
 class SymbolSettingsView: StyleAnnotationSettingsView { 
     
-    var symbol: MGLSymbolStyleAnnotation!
+    var symbol: MLNSymbolStyleAnnotation!
     var observations = [NSKeyValueObservation]()
     @objc var fontSizeSetting: SegmentedControlSettingView!
     @objc var fontColorSetting: ColorSettingView!
@@ -32,7 +32,7 @@ class SymbolSettingsView: StyleAnnotationSettingsView {
         super.init(frame: frame)
     }
     
-    required init(symbolStyleAnnotation: MGLSymbolStyleAnnotation) {
+    required init(symbolStyleAnnotation: MLNSymbolStyleAnnotation) {
         super.init(frame: CGRect.zero)
         self.symbol = symbolStyleAnnotation      
         setup()

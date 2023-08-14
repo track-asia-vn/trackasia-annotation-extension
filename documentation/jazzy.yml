@@ -17,16 +17,16 @@ theme: jazzy-theme
 custom_categories:
   - name: Annotation controllers
     children:
-      - MGLAnnotationController
-      - MGLStyleAnnotationController
-      - MGLCircleAnnotationController
-      - MGLLineAnnotationController
-      - MGLPolygonAnnotationController
-      - MGLSymbolAnnotationController
+      - MLNAnnotationController
+      - MLNStyleAnnotationController
+      - MLNCircleAnnotationController
+      - MLNLineAnnotationController
+      - MLNPolygonAnnotationController
+      - MLNSymbolAnnotationController
   - name: Style annotations
     children:
-      - MGLStyleAnnotation
-      - MGLCircleStyleAnnotation
-      - MGLLineStyleAnnotation
-      - MGLPolygonStyleAnnotation
-      - MGLSymbolStyleAnnotation
+      - MLNStyleAnnotation
+      - MLNCircleStyleAnnotation
+      - MLNLineStyleAnnotation
+      - MLNPolygonStyleAnnotation
+      - MLNSymbolStyleAnnotation

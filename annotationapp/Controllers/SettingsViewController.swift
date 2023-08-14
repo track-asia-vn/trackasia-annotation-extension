@@ -4,11 +4,11 @@ import TrackasiaAnnotationExtension
 
 class SettingsViewController: UIViewController {
 
-    var styleAnnotation: MGLStyleAnnotation!
+    var styleAnnotation: MLNStyleAnnotation!
     var settingsView: UIStackView!
     var delegate: AnnotationStyleSettingsDelegate?
     
-    init(for styleAnnotation: MGLStyleAnnotation) {
+    init(for styleAnnotation: MLNStyleAnnotation) {
         self.styleAnnotation = styleAnnotation
         super.init(nibName: nil, bundle: nil)
     }
@@ -47,28 +47,28 @@ class SettingsViewController: UIViewController {
     }
 
     
-    func generateViewsForSettings(with annotation: MGLStyleAnnotation) -> (menuTitle: String, menu: UIStackView) {
+    func generateViewsForSettings(with annotation: MLNStyleAnnotation) -> (menuTitle: String, menu: UIStackView) {
         var title: String!
         var settingsView: UIStackView!
         
-        if annotation is MGLCircleStyleAnnotation {
+        if annotation is MLNCircleStyleAnnotation {
             title = "Edit circle"
-            settingsView = CircleSettingsView(circleStyleAnnotation: annotation as! MGLCircleStyleAnnotation)
+            settingsView = CircleSettingsView(circleStyleAnnotation: annotation as! MLNCircleStyleAnnotation)
         }
         
-        if annotation is MGLSymbolStyleAnnotation {
+        if annotation is MLNSymbolStyleAnnotation {
             title = "Edit symbol"
-            settingsView = SymbolSettingsView(symbolStyleAnnotation: annotation as! MGLSymbolStyleAnnotation)
+            settingsView = SymbolSettingsView(symbolStyleAnnotation: annotation as! MLNSymbolStyleAnnotation)
         }
         
-        if annotation is MGLLineStyleAnnotation {
+        if annotation is MLNLineStyleAnnotation {
             title = "Edit line"
-            settingsView = LineSettingsView(lineStyleAnnotation: annotation as! MGLLineStyleAnnotation)
+            settingsView = LineSettingsView(lineStyleAnnotation: annotation as! MLNLineStyleAnnotation)
         }
         
-        if annotation is MGLPolygonStyleAnnotation {
+        if annotation is MLNPolygonStyleAnnotation {
             title = "Edit polygon"
-            settingsView = PolygonSettingsView(polygonStyleAnnotation: annotation as! MGLPolygonStyleAnnotation)
+            settingsView = PolygonSettingsView(polygonStyleAnnotation: annotation as! MLNPolygonStyleAnnotation)
         }
         
         return (menuTitle: title, menu: settingsView)

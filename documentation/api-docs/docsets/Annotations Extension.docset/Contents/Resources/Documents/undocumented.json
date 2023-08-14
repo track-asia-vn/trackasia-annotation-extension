@@ -1,9 +1,9 @@
 {
   "warnings": [
     {
-      "file": "/Volumes/DATA/ADVN-GIT/TRACK-ASIA/trackasia-annotation-extension/TrackasiaAnnotationExtension/Controllers/MGLLineAnnotationController.h",
+      "file": "/Volumes/DATA/ADVN-GIT/TRACK-ASIA/trackasia-annotation-extension/TrackasiaAnnotationExtension/Controllers/MLNLineAnnotationController.h",
       "line": 79,
-      "symbol": "MGLLineAnnotationController.lineGradient",
+      "symbol": "MLNLineAnnotationController.lineGradient",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     }

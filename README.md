@@ -43,44 +43,44 @@ You can find a sample application within this project by running the `annotation
 
 The Trackasia Annotation Extension supports the addition of circles, lines, polygons, and symbols. Each shape type has its own corresponding controller which manages the addition of multiple shape objects of the same type.
 
-Since the map needs to be finished loading before adding shapes to it, all shapes should be added within the `MGLMapView:didFinishLoadingStyle:`delegate method.
+Since the map needs to be finished loading before adding shapes to it, all shapes should be added within the `MLNMapView:didFinishLoadingStyle:`delegate method.
 
-### Circles (`MGLCircleStyleAnnotation`)
+### Circles (`MLNCircleStyleAnnotation`)
 _Circles represent a coordinate point on a map with an associated radius, measured in pixels._
 
 ```swift
-func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-  let circleAnnotationController = MGLCircleAnnotationController(mapView: self.mapView)
-  let circle = MGLCircleStyleAnnotation(center: CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), radius: 3.0, color: .blue)
+func mapView(_ mapView: MLNMapView, didFinishLoading style: MLNStyle) {
+  let circleAnnotationController = MLNCircleAnnotationController(mapView: self.mapView)
+  let circle = MLNCircleStyleAnnotation(center: CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), radius: 3.0, color: .blue)
   circle.opacity = 0.5
   circleAnnotationController.add(circle)
 }
 ```
 
-### Lines (`MGLLineStyleAnnotation`)
+### Lines (`MLNLineStyleAnnotation`)
 _Lines represent a connected series of coordinates._
 
 ```swift
-func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-  let lineAnnotationController = MGLLineAnnotationController(mapView: self.mapView)
+func mapView(_ mapView: MLNMapView, didFinishLoading style: MLNStyle) {
+  let lineAnnotationController = MLNLineAnnotationController(mapView: self.mapView)
   
   let lineCoordinates = [
       CLLocationCoordinate2D(latitude: 59, longitude: 18),
       CLLocationCoordinate2D(latitude: 60, longitude: 20)
   ]
   
-  let line = MGLLineStyleAnnotation(coordinates: lineCoordinates, count: UInt(lineCoordinates.count))
+  let line = MLNLineStyleAnnotation(coordinates: lineCoordinates, count: UInt(lineCoordinates.count))
   line.color = .purple
   lineAnnotationController.add(line)
 }
 ```
 
-### Polygons (`MGLPolygonStyleAnnotation`)
+### Polygons (`MLNPolygonStyleAnnotation`)
 _Polygons represent a connected series of coordinates, where the first and last coordinates are equal._
 
 ```swift
-func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-  let polygonAnnotationController = MGLPolygonAnnotationController(mapView: self.mapView)
+func mapView(_ mapView: MLNMapView, didFinishLoading style: MLNStyle) {
+  let polygonAnnotationController = MLNPolygonAnnotationController(mapView: self.mapView)
   
   let polygonCoordinates = [
     CLLocationCoordinate2DMake(59, 18),
@@ -89,26 +89,26 @@ func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
     CLLocationCoordinate2DMake(59, 18)
   ]
   
-  let polygon = MGLPolygonStyleAnnotation(coordinates: polygonCoordinates, count: UInt(polygonCoordinates.count))
+  let polygon = MLNPolygonStyleAnnotation(coordinates: polygonCoordinates, count: UInt(polygonCoordinates.count))
   polygon.fillOutlineColor = .red
   polygonAnnotationController.add(line)
 }
 ```
 
-### Symbols (`MGLSymbolStyleAnnotation`)
+### Symbols (`MLNSymbolStyleAnnotation`)
 _Symbols represent a coordinate point on a map with a label and an associated optional icon image. An image must be supplied to the [map style's sprite](https://docs.mapbox.com/help/glossary/sprite/) before being able to assign it to be the icon image of a symbol._
 
 ```swift
-func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
+func mapView(_ mapView: MLNMapView, didFinishLoading style: MLNStyle) {
   let attraction = UIImage(named: "attraction")
   
   if let styleImage = attraction {
     self.mapView.style?.setImage(styleImage, forName: "attraction")
   }
   
-  let symbolAnnotationController = MGLSymbolAnnotationController(mapView: self.mapView)
+  let symbolAnnotationController = MLNSymbolAnnotationController(mapView: self.mapView)
   
-  let symbol = MGLSymbolStyleAnnotation(coordinate: CLLocationCoordinate2DMake(59, 18));
+  let symbol = MLNSymbolStyleAnnotation(coordinate: CLLocationCoordinate2DMake(59, 18));
   symbol.iconImageName = "attraction"
   symbol.text = "This is a cool place!"
   symbol.textFontSize = 16
@@ -124,31 +124,31 @@ Style annotations support callouts that appear when the annotation is selected. 
 
 ```swift
 class ViewController: UIViewController {
-    var mapView: MGLMapView!
-    var circleAnnotationController: MGLCircleAnnotationController!
+    var mapView: MLNMapView!
+    var circleAnnotationController: MLNCircleAnnotationController!
 }
 ```
 
 2) The style annotation must contain a title and must implement two delegate methods using the [Maps SDK for iOS](https://docs.mapbox.com/ios/api/maps/). The first method, `annotationCanShowCallout` should return `true`. The second method, `viewFor annotation:` should return an empty
-`MGLAnnotationView` matching the size of the style annotation's shape, as shown below.
+`MLNAnnotationView` matching the size of the style annotation's shape, as shown below.
 
 ```swift
-extension ViewController : MGLMapViewDelegate {
+extension ViewController : MLNMapViewDelegate {
     
-    func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-      circleAnnotationController = MGLCircleAnnotationController(mapView: self.mapView)
-      let circle = MGLCircleStyleAnnotation(center: CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), radius: 3.0, color: .blue)
+    func mapView(_ mapView: MLNMapView, didFinishLoading style: MLNStyle) {
+      circleAnnotationController = MLNCircleAnnotationController(mapView: self.mapView)
+      let circle = MLNCircleStyleAnnotation(center: CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), radius: 3.0, color: .blue)
       circle.opacity = 0.5
       circle.title = "Title"
       circleAnnotationController.add(circle)
     }
 
-    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+    func mapView(_ mapView: MLNMapView, annotationCanShowCallout annotation: MLNAnnotation) -> Bool {
         return true;
     }
     
-    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-        return MGLAnnotationView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+    func mapView(_ mapView: MLNMapView, viewFor annotation: MLNAnnotation) -> MLNAnnotationView? {
+        return MLNAnnotationView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
     }
     
 }
@@ -156,11 +156,11 @@ extension ViewController : MGLMapViewDelegate {
 
 ## Supported properties
 
-Each `MGLStyleAnnotation` class can be assigned a specific set of properties to configure its layout and style. Additionally, `MGLAnnotationController`s also have properties that can assign a specific layout property to all of its child `MGLStyleAnnotation`s. 
+Each `MLNStyleAnnotation` class can be assigned a specific set of properties to configure its layout and style. Additionally, `MLNAnnotationController`s also have properties that can assign a specific layout property to all of its child `MLNStyleAnnotation`s. 
 
 All of these properties mirror the same values specified in the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/). Below is a list of supported properties on each class along with its corresponding property within the Mapbox Style Specification.
 
-**MGLCircleStyleAnnotation**
+**MLNCircleStyleAnnotation**
 - [`circleRadius`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-radius)
 - [`circleColor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-color)
 - [`circleOpacity`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-opacity)
@@ -168,13 +168,13 @@ All of these properties mirror the same values specified in the [Mapbox Style Sp
 - [`circleStrokeColor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-stroke-color)
 - [`circleStrokeOpacity`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-translate)
 
-**MGLCircleAnnotationController**
+**MLNCircleAnnotationController**
 - [`circleTranslation`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-translate)
 - [`circleTranslationAnchor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-translate-anchor)
 - [`circlePitchAlignment`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-pitch-alignment)
 - [`circleScaleAlignment`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-circle-circle-scale-aslignment)
 
-**MGLLineStyleAnnotation**
+**MLNLineStyleAnnotation**
 - [`lineJoin`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-line-line-join)
 - [`lineBlur`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-line-line-blur)
 - [`lineColor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-line-line-color)
@@ -184,7 +184,7 @@ All of these properties mirror the same values specified in the [Mapbox Style Sp
 - [`linePattern`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-line-line-pattern)
 - [`lineWidth`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-line-line-width)
 
-**MGLLineAnnotationController**
+**MLNLineAnnotationController**
 - [`lineCap`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-line-line-cap)
 - [`lineMiterLimit`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-line-line-miter-limit)
 - [`lineRoundLimit`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-line-line-round-limit)
@@ -192,18 +192,18 @@ All of these properties mirror the same values specified in the [Mapbox Style Sp
 - [`lineTranslation`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-line-line-translation)
 - [`lineTranslationAnchor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-line-line-translation-anchor)
 
-**MGLPolygonStyleAnnotation**
+**MLNPolygonStyleAnnotation**
 - [`fillOpacity`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-opacity)
 - [`fillColor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-color)
 - [`fillOutlineColor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-outline-color)
 - [`fillPattern`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-pattern)
 
-**MGLPolygonAnnotationController**
+**MLNPolygonAnnotationController**
 - [`fillAntialiased`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-antialias)
 - [`fillTranslation`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-translate)
 - [`fillTranslationAnchor`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-translate-anchor)
 
-**MGLSymbolStyleAnnotation**
+**MLNSymbolStyleAnnotation**
 
 _Icon images_
 - [`iconScale`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-symbol-icon-size)
@@ -238,7 +238,7 @@ _Symbol text_
 _Icon image & symbol text_
 - [`symbolSortKey`](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layout-symbol-symbol-sort-key)
 
-**MGLSymbolAnnotationController**
+**MLNSymbolAnnotationController**
 
 _Icon images_
 

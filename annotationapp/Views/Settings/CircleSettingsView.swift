@@ -3,7 +3,7 @@ import TrackasiaAnnotationExtension
 
 class CircleSettingsView: StyleAnnotationSettingsView {
     
-    var circle: MGLCircleStyleAnnotation!
+    var circle: MLNCircleStyleAnnotation!
     var observations = [NSKeyValueObservation]()
     @objc var radiusSetting: StepperSettingView!
     @objc var colorSetting: ColorSettingView!
@@ -13,7 +13,7 @@ class CircleSettingsView: StyleAnnotationSettingsView {
         super.init(frame: frame)
     }
     
-    required init(circleStyleAnnotation: MGLCircleStyleAnnotation) {
+    required init(circleStyleAnnotation: MLNCircleStyleAnnotation) {
         super.init(frame: CGRect.zero)
         self.circle = circleStyleAnnotation        
         setup()

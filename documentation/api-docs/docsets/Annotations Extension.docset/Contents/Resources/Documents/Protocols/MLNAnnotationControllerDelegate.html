@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MLNAnnotationControllerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='https://www.mapbox.com/img/favicon.ico' type='image/x-icon' />
+
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+    <meta class="swiftype" name="type" data-type="enum" content="Annotations Extension Reference" />
+    <meta class="swiftype" name="title" data-type="string" content="MLNAnnotationControllerDelegate" />
+    <style type="text/css">
+      .nav-group-name[data-name="MLNAnnotationControllerDelegate"] > .small-heading,
+      .nav-group-task[data-name="MLNAnnotationControllerDelegate"] {
+        background-color: #f5f8fc;
+        font-family: "Open Sans Bold";
+        border-left: 3px solid #3a68d8;
+        padding-left: 5px
+      }
+    </style>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/MLNAnnotationControllerDelegate" class="dashAnchor"></a>
+
+    <a title="MLNAnnotationControllerDelegate Protocol Reference"></a>
+
+    <header class="header-container">
+      <div class="limiter">
+        <div class="header">
+        <p class="header-col header-col--primary">
+          <a class="header-link" href="../index.html">
+            <img style="height: 25px;"  class="header-icon" src="../img/mapbox.svg" alt="Annotations Extension Docs"/>
+            <span class='header-tag'>Annotations Reference (v1.0.0)</span>
+          </a>
+          
+        </p>
+    
+          <p class="header-col header-col--secondary">
+            <a class="header-link space-right2" href="https://github.com/mapbox/map-extensions-ios">
+              <svg style="margin-bottom: 1px;" class="header-icon" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      		      <path stroke="none" stroke-width="1" fill="white" fill-rule="evenodd" d="M16.6,0.4 C7.6,0.4 0.3,7.7 0.3,16.7 C0.3,23.9 5,30 11.4,32.2 C12.2,32.3 12.5,31.8 12.5,31.4 L12.5,28.6 C8,29.6 7,26.4 7,26.4 C6.3,24.5 5.2,24 5.2,24 C3.7,23 5.3,23 5.3,23 C6.9,23.1 7.8,24.7 7.8,24.7 C9.3,27.2 11.6,26.5 12.5,26.1 C12.6,25 13.1,24.3 13.5,23.9 C9.9,23.5 6.1,22.1 6.1,15.8 C6.1,14 6.7,12.6 7.8,11.4 C7.6,11 7.1,9.3 8,7.1 C8,7.1 9.4,6.7 12.5,8.8 C13.8,8.4 15.2,8.3 16.6,8.3 C18,8.3 19.4,8.5 20.7,8.8 C23.8,6.7 25.2,7.1 25.2,7.1 C26.1,9.3 25.5,11 25.4,11.4 C26.4,12.5 27.1,14 27.1,15.8 C27.1,22.1 23.3,23.4 19.7,23.8 C20.3,24.3 20.8,25.3 20.8,26.8 L20.8,31.3 C20.8,31.7 21.1,32.2 21.9,32.1 C28.4,29.9 33,23.8 33,16.6 C32.9,7.7 25.6,0.4 16.6,0.4 L16.6,0.4 Z"></path>
+              </svg>
+              View on GitHub
+            </a>
+          </p>
+    
+      </div>
+      </div>
+    </header>
+
+    <div class="breadcrumbs">
+      <div class="limiter">
+        <a class="breadcrumb" href="../index.html">Annotations Extension Reference</a>
+        <img class="carat" src="../img/carat.png" />
+        MLNAnnotationControllerDelegate Protocol Reference
+      </div>
+    </div>
+
+    <div class="content-wrapper limiter">
+      <nav class="navigation">
+          <div class="header-col--secondary">
+            <form role="search" action="../search.json">
+              <input type="text" placeholder="Search documentation" data-typeahead>
+            </form>
+          </div>
+        <ul class="nav-groups">
+          <li class="nav-group-name" data-name="Annotation controllers">
+            <a class="small-heading" href="../Annotation controllers.html">Annotation controllers<span class="anchor-icon" /></a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task" data-name="MLNAnnotationController" data-url="Classes/MLNAnnotationController.html">
+                <a title="MLNAnnotationController" class="nav-group-task-link" href="../Classes/MLNAnnotationController.html">MLNAnnotationController</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNCircleAnnotationController" data-url="Classes/MLNCircleAnnotationController.html">
+                <a title="MLNCircleAnnotationController" class="nav-group-task-link" href="../Classes/MLNCircleAnnotationController.html">MLNCircleAnnotationController</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNLineAnnotationController" data-url="Classes/MLNLineAnnotationController.html">
+                <a title="MLNLineAnnotationController" class="nav-group-task-link" href="../Classes/MLNLineAnnotationController.html">MLNLineAnnotationController</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNPolygonAnnotationController" data-url="Classes/MLNPolygonAnnotationController.html">
+                <a title="MLNPolygonAnnotationController" class="nav-group-task-link" href="../Classes/MLNPolygonAnnotationController.html">MLNPolygonAnnotationController</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNSymbolAnnotationController" data-url="Classes/MLNSymbolAnnotationController.html">
+                <a title="MLNSymbolAnnotationController" class="nav-group-task-link" href="../Classes/MLNSymbolAnnotationController.html">MLNSymbolAnnotationController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" data-name="Style annotations">
+            <a class="small-heading" href="../Style annotations.html">Style annotations<span class="anchor-icon" /></a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task" data-name="MLNStyleAnnotation" data-url="Classes/MLNStyleAnnotation.html">
+                <a title="MLNStyleAnnotation" class="nav-group-task-link" href="../Classes/MLNStyleAnnotation.html">MLNStyleAnnotation</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNCircleStyleAnnotation" data-url="Classes/MLNCircleStyleAnnotation.html">
+                <a title="MLNCircleStyleAnnotation" class="nav-group-task-link" href="../Classes/MLNCircleStyleAnnotation.html">MLNCircleStyleAnnotation</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNLineStyleAnnotation" data-url="Classes/MLNLineStyleAnnotation.html">
+                <a title="MLNLineStyleAnnotation" class="nav-group-task-link" href="../Classes/MLNLineStyleAnnotation.html">MLNLineStyleAnnotation</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNPolygonStyleAnnotation" data-url="Classes/MLNPolygonStyleAnnotation.html">
+                <a title="MLNPolygonStyleAnnotation" class="nav-group-task-link" href="../Classes/MLNPolygonStyleAnnotation.html">MLNPolygonStyleAnnotation</a>
+              </li>
+              <li class="nav-group-task" data-name="MLNSymbolStyleAnnotation" data-url="Classes/MLNSymbolStyleAnnotation.html">
+                <a title="MLNSymbolStyleAnnotation" class="nav-group-task-link" href="../Classes/MLNSymbolStyleAnnotation.html">MLNSymbolStyleAnnotation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name" data-name="Other Protocols">
+            <a class="small-heading" href="../Other Protocols.html">Other Protocols<span class="anchor-icon" /></a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task" data-name="MLNAnnotationControllerDelegate" data-url="Protocols/MLNAnnotationControllerDelegate.html">
+                <a title="MLNAnnotationControllerDelegate" class="nav-group-task-link" href="../Protocols/MLNAnnotationControllerDelegate.html">MLNAnnotationControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <a href="#/MLNAnnotationControllerDelegate"><h1 id="MLNAnnotationControllerDelegate">MLNAnnotationControllerDelegate<span class="anchor-icon" /></h1></a>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MLNAnnotationControllerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>MLNAnnotationControllerDelegate</code> protocol defines a set of optional methods that you
+can use to receive updates to style annotation changes.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MLNAnnotationControllerDelegate(im)annotationController:didSelectStyleAnnotation:"></a>
+                    <a name="//apple_ref/objc/Method/-annotationController:didSelectStyleAnnotation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MLNAnnotationControllerDelegate(im)annotationController:didSelectStyleAnnotation:"><span class="token-name">-annotationController:didSelectStyleAnnotation:</span><span class="token-icon" /></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <section class="section">
+                      <div class="abstract">
+                        <p>Called after the user has tapped and selected a style annotation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language keyline-blue">
+                          <p  style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">annotationController</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MLNAnnotationController.html">MLNAnnotationController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">annotationController</span>
+    <span class="nf">didSelectStyleAnnotation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MLNStyleAnnotation.html">MLNStyleAnnotation</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">styleAnnotation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language keyline-purple">
+                          <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">annotationController</span><span class="p">(</span><span class="n">_</span> <span class="nv">annotationController</span><span class="p">:</span> <span class="kt"><a href="../Classes/MLNAnnotationController.html">MLNAnnotationController</a></span><span class="p">,</span> <span class="n">didSelect</span> <span class="nv">styleAnnotation</span><span class="p">:</span> <span class="kt"><a href="../Classes/MLNStyleAnnotation.html">MLNStyleAnnotation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                  styleAnnotation
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The annotation that was selected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MLNAnnotationControllerDelegate(im)annotationController:didDeselectStyleAnnotation:"></a>
+                    <a name="//apple_ref/objc/Method/-annotationController:didDeselectStyleAnnotation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MLNAnnotationControllerDelegate(im)annotationController:didDeselectStyleAnnotation:"><span class="token-name">-annotationController:didDeselectStyleAnnotation:</span><span class="token-icon" /></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <section class="section">
+                      <div class="abstract">
+                        <p>Called after the user has tapped and deselected a style annotation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language keyline-blue">
+                          <p  style="background: rgba(65, 131, 196, 0.15);" class="aside-title text-blue">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">annotationController</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MLNAnnotationController.html">MLNAnnotationController</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">annotationController</span>
+    <span class="nf">didDeselectStyleAnnotation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MLNStyleAnnotation.html">MLNStyleAnnotation</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">styleAnnotation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language keyline-purple">
+                          <p style="background: rgba(149, 149, 209, 0.21);" class="aside-title text-purple">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">annotationController</span><span class="p">(</span><span class="n">_</span> <span class="nv">annotationController</span><span class="p">:</span> <span class="kt"><a href="../Classes/MLNAnnotationController.html">MLNAnnotationController</a></span><span class="p">,</span> <span class="n">didDeselect</span> <span class="nv">styleAnnotation</span><span class="p">:</span> <span class="kt"><a href="../Classes/MLNStyleAnnotation.html">MLNStyleAnnotation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                  styleAnnotation
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The annotation that was deselected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer limiter">
+      <p>© 2014–2019 <a class="link" href="https://www.mapbox.com/" target="_blank" rel="external noopener">Mapbox</a>.</p> Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.
+    </section>
+  </body>
+</div>
+</html>

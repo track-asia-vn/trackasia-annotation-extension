@@ -3,7 +3,7 @@ import TrackasiaAnnotationExtension
 
 class LineSettingsView: StyleAnnotationSettingsView {   
     
-    var line: MGLLineStyleAnnotation!
+    var line: MLNLineStyleAnnotation!
     var observations = [NSKeyValueObservation]()
     @objc var colorSetting: ColorSettingView!
     @objc var widthSetting: StepperSettingView!
@@ -12,9 +12,9 @@ class LineSettingsView: StyleAnnotationSettingsView {
     @objc var lineGapWidthSetting: StepperSettingView!
     
     let lineJoinSettings = [
-        (name: "Bevel", value: MGLLineJoin.bevel),
-        (name: "Round", value: MGLLineJoin.round),
-        (name: "Miter", value: MGLLineJoin.miter)
+        (name: "Bevel", value: MLNLineJoin.bevel),
+        (name: "Round", value: MLNLineJoin.round),
+        (name: "Miter", value: MLNLineJoin.miter)
     ]
     
     var currentLineJoinIndex: Int!
@@ -23,7 +23,7 @@ class LineSettingsView: StyleAnnotationSettingsView {
         super.init(frame: frame)
     }
     
-    required init(lineStyleAnnotation: MGLLineStyleAnnotation) {
+    required init(lineStyleAnnotation: MLNLineStyleAnnotation) {
         super.init(frame: CGRect.zero)
         self.line = lineStyleAnnotation        
         setup()

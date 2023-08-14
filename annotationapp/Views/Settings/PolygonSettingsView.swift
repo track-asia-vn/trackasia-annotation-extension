@@ -3,7 +3,7 @@ import TrackasiaAnnotationExtension
 
 class PolygonSettingsView: StyleAnnotationSettingsView {
     
-    var polygon: MGLPolygonStyleAnnotation!
+    var polygon: MLNPolygonStyleAnnotation!
     var observations = [NSKeyValueObservation]()
     @objc var fillColorSetting: ColorSettingView!
     @objc var opacitySetting: SliderSettingView!
@@ -16,7 +16,7 @@ class PolygonSettingsView: StyleAnnotationSettingsView {
         super.init(frame: frame)
     }
     
-    required init(polygonStyleAnnotation: MGLPolygonStyleAnnotation) {
+    required init(polygonStyleAnnotation: MLNPolygonStyleAnnotation) {
         super.init(frame: CGRect.zero)
         self.polygon = polygonStyleAnnotation        
         setup()

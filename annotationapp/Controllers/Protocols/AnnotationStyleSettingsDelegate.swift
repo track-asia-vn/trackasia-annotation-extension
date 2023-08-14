@@ -1,5 +1,5 @@
 import TrackasiaAnnotationExtension
 
 protocol AnnotationStyleSettingsDelegate {
-    func didUpdateStyleAnnotation(with updatedAnnotation: MGLStyleAnnotation)
+    func didUpdateStyleAnnotation(with updatedAnnotation: MLNStyleAnnotation)
 }

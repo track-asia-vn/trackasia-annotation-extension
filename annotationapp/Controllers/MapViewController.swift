@@ -4,31 +4,31 @@ import TrackasiaAnnotationExtension
 
 class MapViewController: UIViewController {
 
-    var mapView: MGLMapView!
+    var mapView: MLNMapView!
     
-    var circleAnnotationController: MGLCircleAnnotationController!
-    var circleAnnotation: MGLCircleStyleAnnotation!
+    var circleAnnotationController: MLNCircleAnnotationController!
+    var circleAnnotation: MLNCircleStyleAnnotation!
     
-    var symbolAnnotationController: MGLSymbolAnnotationController!
-    var symbolAnnotation: MGLSymbolStyleAnnotation!
+    var symbolAnnotationController: MLNSymbolAnnotationController!
+    var symbolAnnotation: MLNSymbolStyleAnnotation!
     
-    var lineAnnotationController: MGLLineAnnotationController!
-    var lineAnnotation: MGLLineStyleAnnotation!
+    var lineAnnotationController: MLNLineAnnotationController!
+    var lineAnnotation: MLNLineStyleAnnotation!
     
-    var polygonAnnotationController: MGLPolygonAnnotationController!
-    var polygonAnnotation: MGLPolygonStyleAnnotation!
+    var polygonAnnotationController: MLNPolygonAnnotationController!
+    var polygonAnnotation: MLNPolygonStyleAnnotation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mapView = MGLMapView(frame: view.bounds, styleURL: MGLStyle.streetsStyleURL)
+        mapView = MLNMapView(frame: view.bounds, styleURL: MLNStyle.streetsStyleURL)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.setCenter(CLLocationCoordinate2D(latitude: -42, longitude: -187.5), zoomLevel: 4, animated: false)
         mapView.delegate = self
         view.addSubview(mapView)
     }
     
-    func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {        
+    func mapView(_ mapView: MLNMapView, didFinishLoading style: MLNStyle) {        
         self.loadStyleImages(for: style)
         self.addCircleStyleAnnotation()
         self.addSymbolStyleAnnotation()
@@ -38,7 +38,7 @@ class MapViewController: UIViewController {
     
     // MARK: Style annotation setup
     
-    func loadStyleImages(for style: MGLStyle) {
+    func loadStyleImages(for style: MLNStyle) {
         style.setImage(UIImage(named: "star-icon-image")!, forName: "star-icon-image")
         style.setImage(UIImage(named: "camera-icon-image")!, forName: "camera-icon-image")
         style.setImage(UIImage(named: "flag-icon-image")!, forName: "flag-icon-image")
@@ -49,11 +49,11 @@ class MapViewController: UIViewController {
     }
     
     func addCircleStyleAnnotation() {
-        circleAnnotationController = MGLCircleAnnotationController(mapView: mapView)
+        circleAnnotationController = MLNCircleAnnotationController(mapView: mapView)
         circleAnnotationController.delegate = self
         circleAnnotationController.annotationsInteractionEnabled = true
         let circleCoordinate = CLLocationCoordinate2D(latitude: -45, longitude: -183)
-        circleAnnotation = MGLCircleStyleAnnotation(center: circleCoordinate)
+        circleAnnotation = MLNCircleStyleAnnotation(center: circleCoordinate)
         circleAnnotation.isDraggable = true
         circleAnnotation.circleColor = UIColor.red
         circleAnnotation.circleRadius = 20.0
@@ -62,11 +62,11 @@ class MapViewController: UIViewController {
     }
     
     func addSymbolStyleAnnotation() {
-        symbolAnnotationController = MGLSymbolAnnotationController(mapView: mapView)
+        symbolAnnotationController = MLNSymbolAnnotationController(mapView: mapView)
         symbolAnnotationController.delegate = self
         symbolAnnotationController.annotationsInteractionEnabled = true
         let symbolCoordinate =  CLLocationCoordinate2D(latitude: -34, longitude: -187)
-        symbolAnnotation = MGLSymbolStyleAnnotation(coordinate: symbolCoordinate)
+        symbolAnnotation = MLNSymbolStyleAnnotation(coordinate: symbolCoordinate)
         symbolAnnotation.isDraggable = true
         symbolAnnotation.text = "Label"
         symbolAnnotation.textFontSize = 36.0
@@ -91,10 +91,10 @@ class MapViewController: UIViewController {
             CLLocationCoordinate2D(latitude: -36.877, longitude: 174.755)
         ]
         
-        lineAnnotationController = MGLLineAnnotationController(mapView: mapView)
+        lineAnnotationController = MLNLineAnnotationController(mapView: mapView)
         lineAnnotationController.delegate = self
         lineAnnotationController.annotationsInteractionEnabled = true
-        lineAnnotation = MGLLineStyleAnnotation(coordinates: lineCoordinates, count: UInt(lineCoordinates.count))
+        lineAnnotation = MLNLineStyleAnnotation(coordinates: lineCoordinates, count: UInt(lineCoordinates.count))
         lineAnnotation.isDraggable = true
         lineAnnotation.lineWidth = 5.0
         lineAnnotation.lineColor = .blue
@@ -111,10 +111,10 @@ class MapViewController: UIViewController {
             CLLocationCoordinate2D(latitude: -40.21, longitude: 166.15)
         ]
         
-        polygonAnnotationController = MGLPolygonAnnotationController(mapView: mapView)
+        polygonAnnotationController = MLNPolygonAnnotationController(mapView: mapView)
         polygonAnnotationController.delegate = self
         polygonAnnotationController.annotationsInteractionEnabled = true
-        polygonAnnotation = MGLPolygonStyleAnnotation(coordinates: polygonCoordinates, count: UInt(polygonCoordinates.count))
+        polygonAnnotation = MLNPolygonStyleAnnotation(coordinates: polygonCoordinates, count: UInt(polygonCoordinates.count))
         polygonAnnotation.isDraggable = true
         polygonAnnotation.fillColor = UIColor.yellow.withAlphaComponent(0.4)
         polygonAnnotation.fillOutlineColor = .black
@@ -122,15 +122,15 @@ class MapViewController: UIViewController {
     }
 }
 
-extension MapViewController: MGLMapViewDelegate {
+extension MapViewController: MLNMapViewDelegate {
     // This is required in order to hide the default Maps SDK pin
-    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-        return MGLAnnotationView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+    func mapView(_ mapView: MLNMapView, viewFor annotation: MLNAnnotation) -> MLNAnnotationView? {
+        return MLNAnnotationView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
     }
 }
 
-extension MapViewController: MGLAnnotationControllerDelegate {
-    func annotationController(_ annotationController: MGLAnnotationController, didSelect styleAnnotation: MGLStyleAnnotation) {        
+extension MapViewController: MLNAnnotationControllerDelegate {
+    func annotationController(_ annotationController: MLNAnnotationController, didSelect styleAnnotation: MLNStyleAnnotation) {        
         let settingsViewController = SettingsViewController(for: styleAnnotation)
         settingsViewController.delegate = self
         let customTransitioningDelegate = PresentationControllerDelegate()
@@ -141,23 +141,23 @@ extension MapViewController: MGLAnnotationControllerDelegate {
 }
 
 extension MapViewController: AnnotationStyleSettingsDelegate {
-    func didUpdateStyleAnnotation(with updatedAnnotation: MGLStyleAnnotation) {
-        if updatedAnnotation is MGLCircleStyleAnnotation {
+    func didUpdateStyleAnnotation(with updatedAnnotation: MLNStyleAnnotation) {
+        if updatedAnnotation is MLNCircleStyleAnnotation {
             circleAnnotationController.updateStyleAnnotation(updatedAnnotation)
             circleAnnotationController.deselectStyleAnnotation(updatedAnnotation)
         }
         
-        if updatedAnnotation is MGLSymbolStyleAnnotation {
+        if updatedAnnotation is MLNSymbolStyleAnnotation {
             symbolAnnotationController.updateStyleAnnotation(updatedAnnotation)
             symbolAnnotationController.deselectStyleAnnotation(updatedAnnotation)
         }
         
-        if updatedAnnotation is MGLLineStyleAnnotation {
+        if updatedAnnotation is MLNLineStyleAnnotation {
             lineAnnotationController.updateStyleAnnotation(updatedAnnotation)
             lineAnnotationController.deselectStyleAnnotation(updatedAnnotation)
         }
         
-        if updatedAnnotation is MGLPolygonStyleAnnotation {
+        if updatedAnnotation is MLNPolygonStyleAnnotation {
             polygonAnnotationController.updateStyleAnnotation(updatedAnnotation)
             polygonAnnotationController.deselectStyleAnnotation(updatedAnnotation)
         }

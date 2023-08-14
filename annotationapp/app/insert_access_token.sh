@@ -7,7 +7,7 @@ else
   token_file2=~/mapbox
   token="$(cat $token_file 2>/dev/null || cat $token_file2 2>/dev/null)"
   if [ "$token" ]; then
-    plutil -replace MGLMapboxAccessToken -string $token "$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+    plutil -replace MLNMapboxAccessToken -string $token "$TARGET_BUILD_DIR/$INFOPLIST_PATH"
     echo "Token insertion successful"
   else
     echo \'error: Missing Mapbox access token\'
