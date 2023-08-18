@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/track-asia/trackasia-annotation-extension.git" }
+  s.source       = { :git => "https://github.com/track-asia/trackasia-annotation-extension.git", :tag => '1.0.0' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
