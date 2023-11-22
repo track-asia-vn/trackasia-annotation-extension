@@ -1,0 +1,22 @@
+PODS:
+  - Trackasia (1.0.1)
+
+DEPENDENCIES:
+  - Trackasia (from `https://github.com/track-asia/trackasia-cocoapods.git`, tag `1.0.1`)
+
+EXTERNAL SOURCES:
+  Trackasia:
+    :git: https://github.com/track-asia/trackasia-cocoapods.git
+    :tag: 1.0.1
+
+CHECKOUT OPTIONS:
+  Trackasia:
+    :git: https://github.com/track-asia/trackasia-cocoapods.git
+    :tag: 1.0.1
+
+SPEC CHECKSUMS:
+  Trackasia: e60853f6e275b9501bc88d5bd878f9b1e9c1fbba
+
+PODFILE CHECKSUM: e21b60d61fc7b3d67a23ea3329d7f14b67341b1a
+
+COCOAPODS: 1.12.1
